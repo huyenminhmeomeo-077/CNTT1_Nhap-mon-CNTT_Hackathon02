@@ -1,0 +1,8 @@
+# Script: tong_hop.txt
+# Tac gia: Dang Minh Huyen
+# Ngay tao: 2026-11-11
+echo "Dang tao bao cao..."
+echo "=== BAO CAO SU CO WEBSITE ===" > logs/tong_hop.txt
+cat logs/rental.log | grep "WARNING" >> logs/tong_hop.txt
+cat logs/rental.log | grep "ERROR" | wc -l >> logs/tong_hop.txt
+echo "Hoan thanh!"
